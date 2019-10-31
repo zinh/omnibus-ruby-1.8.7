@@ -6,7 +6,7 @@
 
 name "ruby-1.8.7"
 maintainer "Vinh Nguyen"
-homepage "https://CHANGE-ME.com"
+homepage "https://blog.monotone.dev"
 
 # Defaults to C:/ruby-1.8.7 on Windows
 # and /opt/ruby-1.8.7 on all other platforms
