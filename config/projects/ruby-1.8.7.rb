@@ -10,8 +10,8 @@ homepage "https://blog.monotone.dev"
 
 # Defaults to C:/ruby-1.8.7 on Windows
 # and /opt/ruby-1.8.7 on all other platforms
-#install_dir "#{default_root}/#{name}"
-install_dir "/home/centos/omnibus/omnibus-ruby-1.8.7/local/#{name}"
+install_dir "#{default_root}/#{name}"
+#install_dir "/home/centos/omnibus/omnibus-ruby-1.8.7/local/#{name}"
 build_version Omnibus::BuildVersion.semver
 build_iteration 1
 
