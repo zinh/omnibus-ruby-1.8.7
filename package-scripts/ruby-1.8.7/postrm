@@ -1,0 +1,9 @@
+#!/bin/sh
+#
+# Perform necessary ruby-1.8.7 removal steps
+# after package is uninstalled.
+#
+
+echo "ruby-1.8.7 has been uninstalled!"
+
+exit 0

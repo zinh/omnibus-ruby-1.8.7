@@ -1,0 +1,26 @@
+#
+# The .kitchen.local.yml takes preference and is compiled into the top-level
+# .kitchen.yml. Uncomment the following section to use VMWare Fusion instead of
+# the default Vagrant driver of VirtualBox.
+#
+
+driver:
+  name: docker
+
+provisioner:
+  name: chef_zero
+
+platforms:
+- name: centos
+  image: centos:6.6
+  run_list: yum-epel::default
+
+suites:
+  - name: default
+    run_list: omnibus::default
+    attributes:
+      omnibus:
+        build_user:          vagrant
+        build_user_group:    vagrant
+        build_user_password: vagrant
+        install_dir:         /opt/ruby-1.8.7

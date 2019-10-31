@@ -1,0 +1,11 @@
+--- ruby-1.8.7/math.c.orig	2019-10-31 11:08:17.495845899 +0900
++++ ruby-1.8.7/math.c	2019-10-31 11:08:25.682845575 +0900
+@@ -34,7 +34,7 @@
+ 	if (isnan(x)) {
+ #if defined(EDOM)
+ 	    errno = EDOM;
+-#elif define(ERANGE)
++#elif defined(ERANGE)
+ 	    errno = ERANGE;
+ #endif
+ 	    continue;
